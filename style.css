@@ -1,0 +1,617 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* #14a800  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    font-family: 'Monstserrat';
+
+}
+    /* Navbar Sec starts here */
+
+.nav_main{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    top: 0;
+}
+.nav_section{
+    border-bottom: 1px solid rgb(165, 163, 163);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+
+}
+.navmenu{
+    /* border: 1px solid red; */
+    /* width: 60%; */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav_logo{
+
+}
+.nav_logo h1{
+    color: #14a800;
+    font-size: 20px;
+}
+.nav_logo h1:hover{
+    cursor: pointer;
+}
+.menulinks{
+    
+}
+.menulinks ul li:hover{
+    color: #14a800;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.menulinks ul{
+    display: flex;
+    gap: 10px;
+    /* font-weight: bold; */
+}
+.nav_search{
+    /* border: 1px solid green; */
+    /* width: 40%; */
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.searchbar{
+    border-radius: 20px;
+    border: 1px solid gray;
+    padding: 0px 20px;
+}
+.searchbar input{
+    padding: 10px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+}
+.searchbar span:hover{
+    cursor: pointer;
+}
+
+.searchbtn{
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+.searchbtn span{
+    font-weight: 400;
+    font-size: 15px;
+}
+.btn_sign{
+    background-color: #127c04f3;
+    border-radius: 20px;
+    /* font-size: 15px; */
+    color: white;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+.btn_sign:hover{
+    background-color: #14a800;
+}
+.menu_anchor{
+    margin-top: 15px;
+    padding: 0 10px;
+}
+.more a:hover{
+    text-decoration: none !important;
+    
+}
+.menu_anchor ul{
+    display: flex;
+    gap: 10px;
+}
+.menu_anchor ul li a{
+    color: black !important;
+    
+}
+.menu_anchor ul li a:hover{
+    text-decoration: underline;
+}
+
+        /* Body Section  */
+
+.body_section{
+    width: 85%;
+    margin: 10px auto;
+    padding: 120px 20px;
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 20px;
+
+}
+.body_des{
+    /* border: 1px solid black; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.body_img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.body_img img{
+    width: 470px;
+    height: 470px;
+}
+.body_heading{
+    /* border: 1px solid purple; */
+}
+.body_heading h1{
+    font-size: 70px;
+    color: #14a800;
+}
+.body_heading p{
+    color: #5e6d55;
+    font-size: 24px;
+    font-weight: bold;
+}
+.body_btn{
+    margin-top: 25px;
+}
+.btngreen{
+    background-color: #14a800;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+.btngreen:hover{
+    background-color: #055805;
+    transition: 1s;
+}
+.btnsimple{
+    background-color: white;
+    border: 1px solid #14a800;
+    color: #14a800;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+.btnsimple:hover{
+    cursor: pointer;
+    background-color: #c4c5c4;
+    border:1px solid black;
+    color: black;
+    transition: 1s;
+}
+.body_trust{
+    /* border: 1px solid red; */
+}
+.body_trust img{
+    display: inline-block;
+    margin-right: 20px;
+}
+.body_trust h3{
+    color: #5e6d55;
+}
+
+    /* Category starts here  */
+
+.category{
+    /* border: 1px solid red; */
+    width: 85%;
+    margin: 10px auto;
+}
+.category_head{
+    padding: 20px 0px;
+}
+.category_head h1{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.category_head span{
+    color: #5e6d55;
+}
+.category_head span a {
+    color: #14a800;
+}
+.category_cards{
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 20px;
+    row-gap: 10px;
+}
+.category_cards div{
+    background-color: #f2f7f2;
+    padding: 30px;
+    border-radius: 10px;
+}
+.card{
+    height: 100px;
+}
+.card h1{
+    font-size: 24px;
+    font-weight: bold;
+}
+.card:hover{
+    background-color: #c4c5c4;
+    cursor: pointer;
+}
+
+    /* Media Query */
+
+@media (max-width:481px) {
+    .menulinks, .searchbar input, .searchbar span, .menu_anchor, .body_img{
+        display: none;
+    }
+
+
+}
+        /* body section till here  */
+        /* Enterprise section starts here  */
+
+.enterprise{
+    display: flex;
+    width: 90%;
+    margin: 40px auto;
+    
+}
+.enterprise_content{
+    width: 55%;
+    background-color: #13544e;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 8px 0 0 8px;
+
+}
+.enterprise_content h6{
+    color: white;
+    font-size: 25px;
+}
+.enterprise_content h1{
+    font-size: 38px;
+    margin-top: 10px;
+    color: white;
+}
+.enterprise_content span {
+    color: #91e6b3;
+}
+.enterprise_content p{
+    color: white;
+    font-size: 30px;
+}
+.enterprise_content ul li{
+    margin-bottom: 10px;
+    color: white;
+}
+.enterprise_content button{
+    border: none;
+    color: #13544e;
+    padding: 10px;
+    width: 20%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.enterprise_img{
+    width: 45%;
+}
+.enterprise_img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 8px 8px 0px;
+}
+
+    /* enterprise till here  */
+    /* Client section starts here  */
+
+
+.client{
+    width:90%;
+    background-image: url(./assets/find-talent.jpg);
+    height: 650px;
+    margin: 40px auto;
+    /* border: 1px solid red; */
+    object-fit: cover;
+    padding: 5px;
+    border-radius: 10px;
+}
+.client_content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 20px;
+}
+.client_content h6{
+    color: white;
+    font-size: 22px;
+}
+.client_content h1{
+    color: white;
+    font-size: 85px;
+    margin-top: 50px;
+}
+.client_content p{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+.client_cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.client_cards h1{
+    color: white;
+    font-size:25px;
+}
+.client_cards h3{
+    color: white;
+    font-size: 13px;
+}
+.client_cards h3 sup{
+    font-size: 6px;
+}
+.client_cards div{
+    width: 100%;
+    background-color:#14a800;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 5px;
+    /* margin: 10px; */
+    /* width: 100%; */
+}      
+.client_cards div:hover{
+    background-color: white;
+    cursor: pointer;
+}
+.client_cards div:hover *{
+    color: #14a800;
+}
+
+        /* business section starts here  */
+
+.business{
+    width: 90%;
+    margin: 40px auto;
+    /* border: 1px solid red; */
+    display: flex;
+    position: relative;
+    z-index: -1;
+}
+.business_content1{
+    /* margin: 20px; */
+    width: 70%;
+    height: 550px;
+    border-radius: 10px 0 0 10px;
+    background-color: #f2f7f2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.business_content1 h1{
+    color: #001e00;
+    font-size: 60px;
+}
+.business_content1 h3{
+    color: #001e00;
+    font-size: 40px;
+    padding: 15px;
+}
+.business_content1 p{
+    color: #5e6d55 ;
+    padding-left: 15px;
+}
+.business_content2{
+    width: 30%;
+    border-radius: 0 10px 10px 0;
+    background-color: #14a800;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    padding-top: 150px;
+    gap: 20px;
+}
+.business_content2 h1{
+    color: white;
+    font-weight: 500;
+    font-size: 40px;
+}
+.business_content2 h3{
+    color: white;
+    font-weight: 500;
+    font-size: 40px;
+}
+.business_content2 p{
+    color: white;
+}
+.business img{
+    width:300px;
+    position: absolute;
+    bottom: -10px;
+    right:290px;
+}
+
+/* Talent section starts here  */
+
+.talent_section{
+    display: flex;
+    width: 90%;
+    margin: 40px auto;
+    /* border: 1px solid red; */
+    
+}
+.talent_img{
+    width: 50%;
+}
+.talent_section img {
+    width:100%;
+    height: 100%;
+    border-radius: 8px 0 0 8px;
+}
+.talent_content{
+    width: 50%;
+    background-color:#1f57c3;
+    border-radius: 0 8px 8px 0;
+}
+.talent_content1{
+    margin: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.talent_content1 h6{
+    font-size: 25px;
+}
+.talent_content1 h1{
+    font-size: 55px;
+}
+.talent_content1 p{
+    font-size: 20px;
+}
+.talent_content2{
+    display: flex;
+    margin: 20px;
+    color: white;
+    margin-top: 180px;
+    gap: 30px;
+}
+.talent_content2 span{
+    font-size: 20px;
+    font-weight: 500;
+}
+.talent_btn{
+    margin: 20px;
+}
+.talent_btn button{
+    border: none;
+    color: #1f57c3;
+    padding: 10px;
+    width: 30%;
+    border-radius: 25px;
+    cursor: pointer;
+}
+    /* brands section starts here  */
+.brands{
+    margin: 40px auto;
+    width: 88%;
+    /* border: 1px solid red; */
+}
+.brands h2{
+    padding: 20px;
+    color: #001e00;
+    font-size: 70px;
+}
+.brands_divs{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.brand_nasdaq{
+    width: 48%;
+    background-color: #13544e;
+    padding: 20px;
+    border-radius: 8px;
+    padding-bottom: 100px;
+}
+.emmy{
+    display: flex;
+    margin-top: 40px;
+    gap: 50px;
+}
+.brand_nasdaq h4{
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.brand_nasdaq p{
+    color: #d5e0d5;
+    margin-top: 10px;
+}
+.brand_microsoft{
+    width: 48%;
+    background-color: #bc511b;
+    padding: 20px;
+    border-radius: 8px;
+    padding-bottom: 100px;
+}
+.brand_microsoft h4{
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.brand_microsoft p{
+    color: #d5e0d5;
+    margin-top: 10px;
+}
+.microsoft{
+    display: flex;
+    margin-top: 40px;
+    gap: 50px;
+}
+.ukraine_section{
+    width: 90%;
+    margin: 40px auto;
+    /* border: 1px solid red; */
+    display: flex;
+    background-color: #d5e0d5;
+    padding: 20px;
+    border-radius: 8px;
+}
+.ukraine_content{
+    width: 70%;
+}
+.ukraine_content h1{
+    color: #001e00;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.ukraine_content p{
+    color: #5e6d55;
+}
+.ukraine_img{
+    width: 30%;
+}
+.ukraine_img img{
+    width: 50%;
+    height: 100%;
+    margin-left: 100px;
+}
+.ukraine_content button{
+    color: #14a800;
+    margin-top: 20px;
+    padding: 10px;
+    width: 20%;
+    border-radius: 25px;
+    border: 1px solid #14a800;
+
+}
+.ukraine_content button:hover{
+    background-color: #d0d1d0;
+    cursor: pointer;
+    transition: 1s;
+}
+
+
